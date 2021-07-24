@@ -6,6 +6,13 @@
 //
 
 #import "ViewController.h"
+//#import "UIColorAppColors.h"
+
+static const NSString *gPageTitle = @"RSSchool";
+static const NSString *gLoginFieldPlaceholder = @"Login";
+static const NSString *gPasswordFieldPlaceholder = @"Password";
+static const NSString *gAuthorizationButtonTitle = @"Authorize";
+
 
 @interface ViewController ()
 
@@ -13,9 +20,13 @@
 
 @implementation ViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
 }
 
 
