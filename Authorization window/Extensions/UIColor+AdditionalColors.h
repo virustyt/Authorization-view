@@ -1,13 +1,15 @@
 //
-//  UIColorExpression.h
+//  UIColor+AdditionalColors.h
 //  Authorization window
 //
-//  Created by Vladimir Oleinikov on 23.07.2021.
+//  Created by Vladimir Oleinikov on 25.07.2021.
 //
-@import Foundation;
-@import UIKit;
 
-@interface UIColor (AppColors)
+#import <UIKit/UIKit.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface UIColor (AdditionalColors)
 //+(UIColor *) white;
 //+(UIColor *) blackCoral;
 //+(UIColor *) turquoiseGreen;
@@ -23,3 +25,5 @@
 @property (class,nonatomic,readonly) UIColor *littleBoyBlue;
 
 @end
+
+NS_ASSUME_NONNULL_END

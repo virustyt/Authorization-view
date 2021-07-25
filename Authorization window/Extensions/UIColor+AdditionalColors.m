@@ -1,13 +1,13 @@
 //
-//  UIColorExtension.m
+//  UIColor+AdditionalColors.m
 //  Authorization window
 //
-//  Created by Vladimir Oleinikov on 23.07.2021.
+//  Created by Vladimir Oleinikov on 25.07.2021.
 //
 
-#import "UIColorAppColors.h"
+#import "UIColor+AdditionalColors.h"
 
-@implementation UIColor (AppColors)
+@implementation UIColor (AdditionalColors)
 
 +(UIColor *) white {
     return [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];;

@@ -15,8 +15,7 @@
     if (self) {
         _login = @"Login";
         _password = @"password";
-        _cypherButtons = @[@(RightPassswordCypherButtonStateFirst),@(RightPassswordCypherButtonStateThird),@(RightPassswordCypherButtonStateSecond)];
-        
+        _cypherButtons = @[@(RightPassswordCypherButtonStateFirst),@(RightPassswordCypherButtonStateThird),@(RightPassswordCypherButtonStateSecond)];        
     }
     return nil;
 }

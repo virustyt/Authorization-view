@@ -10,10 +10,11 @@
 		8412A7FE26AB24DE00C3D425 /* RightPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412A7FC26AB24DE00C3D425 /* RightPassword.m */; };
 		8412A80126AB297A00C3D425 /* RSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412A80026AB297A00C3D425 /* RSTextField.swift */; };
 		8412A80426AB29CE00C3D425 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412A80326AB29CE00C3D425 /* Helpers.swift */; };
-		8412A80626AB2A5300C3D425 /* UIColorAppColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412A80526AB2A5300C3D425 /* UIColorAppColors.m */; };
-		847D409D26ABF075006CADA6 /* UIControl+UIControllOnOffAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D409C26ABF075006CADA6 /* UIControl+UIControllOnOffAlpha.m */; };
-		847D40A026ABF68A006CADA6 /* UIFont+UIFontForTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D409F26ABF68A006CADA6 /* UIFont+UIFontForTitle.m */; };
+		844874C226AD726A0001F873 /* UIColor+AdditionalColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 844874C126AD726A0001F873 /* UIColor+AdditionalColors.m */; };
+		847D409D26ABF075006CADA6 /* UIControl+OnOffAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D409C26ABF075006CADA6 /* UIControl+OnOffAlpha.m */; };
+		847D40A026ABF68A006CADA6 /* UIFont+ForTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D409F26ABF68A006CADA6 /* UIFont+ForTitle.m */; };
 		847D40A226AC01F2006CADA6 /* GlobalFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D40A126AC01F2006CADA6 /* GlobalFunctions.m */; };
+		847D40A526AC7E65006CADA6 /* RSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D40A426AC7E65006CADA6 /* RSTextField.m */; };
 		84C5EA8D26A9EA4200D29B1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA8C26A9EA4200D29B1D /* AppDelegate.m */; };
 		84C5EA9026A9EA4200D29B1D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA8F26A9EA4200D29B1D /* SceneDelegate.m */; };
 		84C5EA9326A9EA4200D29B1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA9226A9EA4200D29B1D /* ViewController.m */; };
@@ -26,17 +27,19 @@
 /* Begin PBXFileReference section */
 		8412A7FC26AB24DE00C3D425 /* RightPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightPassword.m; sourceTree = "<group>"; };
 		8412A7FD26AB24DE00C3D425 /* RightPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RightPassword.h; path = ../../../../../Desktop/Model/RightPassword.h; sourceTree = "<group>"; };
-		8412A7FF26AB297900C3D425 /* Authorization window-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Authorization window-Bridging-Header.h"; sourceTree = "<group>"; };
 		8412A80026AB297A00C3D425 /* RSTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSTextField.swift; sourceTree = "<group>"; };
 		8412A80326AB29CE00C3D425 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		8412A80526AB2A5300C3D425 /* UIColorAppColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIColorAppColors.m; sourceTree = "<group>"; };
-		8412A80726AB3C3900C3D425 /* UIColorAppColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIColorAppColors.h; sourceTree = "<group>"; };
-		847D409B26ABF075006CADA6 /* UIControl+UIControllOnOffAlpha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+UIControllOnOffAlpha.h"; sourceTree = "<group>"; };
-		847D409C26ABF075006CADA6 /* UIControl+UIControllOnOffAlpha.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+UIControllOnOffAlpha.m"; sourceTree = "<group>"; };
-		847D409E26ABF68A006CADA6 /* UIFont+UIFontForTitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+UIFontForTitle.h"; sourceTree = "<group>"; };
-		847D409F26ABF68A006CADA6 /* UIFont+UIFontForTitle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+UIFontForTitle.m"; sourceTree = "<group>"; };
+		844874C026AD726A0001F873 /* UIColor+AdditionalColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+AdditionalColors.h"; sourceTree = "<group>"; };
+		844874C126AD726A0001F873 /* UIColor+AdditionalColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AdditionalColors.m"; sourceTree = "<group>"; };
+		847D409B26ABF075006CADA6 /* UIControl+OnOffAlpha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+OnOffAlpha.h"; sourceTree = "<group>"; };
+		847D409C26ABF075006CADA6 /* UIControl+OnOffAlpha.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+OnOffAlpha.m"; sourceTree = "<group>"; };
+		847D409E26ABF68A006CADA6 /* UIFont+ForTitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+ForTitle.h"; sourceTree = "<group>"; };
+		847D409F26ABF68A006CADA6 /* UIFont+ForTitle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+ForTitle.m"; sourceTree = "<group>"; };
 		847D40A126AC01F2006CADA6 /* GlobalFunctions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalFunctions.m; sourceTree = "<group>"; };
 		847D40A326AC0280006CADA6 /* GlobalFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalFunctions.h; sourceTree = "<group>"; };
+		847D40A426AC7E65006CADA6 /* RSTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSTextField.m; sourceTree = "<group>"; };
+		847D40A626AC7E7B006CADA6 /* RSTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSTextField.h; sourceTree = "<group>"; };
+		847D40A826AC8101006CADA6 /* Authorization window-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Authorization window-Bridging-Header.h"; sourceTree = "<group>"; };
 		84C5EA8826A9EA4200D29B1D /* Authorization window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Authorization window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C5EA8B26A9EA4200D29B1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84C5EA8C26A9EA4200D29B1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,14 +69,27 @@
 			isa = PBXGroup;
 			children = (
 				8412A80326AB29CE00C3D425 /* Helpers.swift */,
-				8412A80726AB3C3900C3D425 /* UIColorAppColors.h */,
-				8412A80526AB2A5300C3D425 /* UIColorAppColors.m */,
-				847D409B26ABF075006CADA6 /* UIControl+UIControllOnOffAlpha.h */,
-				847D409C26ABF075006CADA6 /* UIControl+UIControllOnOffAlpha.m */,
-				847D409E26ABF68A006CADA6 /* UIFont+UIFontForTitle.h */,
-				847D409F26ABF68A006CADA6 /* UIFont+UIFontForTitle.m */,
+				847D409B26ABF075006CADA6 /* UIControl+OnOffAlpha.h */,
+				847D409C26ABF075006CADA6 /* UIControl+OnOffAlpha.m */,
+				847D409E26ABF68A006CADA6 /* UIFont+ForTitle.h */,
+				847D409F26ABF68A006CADA6 /* UIFont+ForTitle.m */,
+				844874C026AD726A0001F873 /* UIColor+AdditionalColors.h */,
+				844874C126AD726A0001F873 /* UIColor+AdditionalColors.m */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		847D40A726AC80DB006CADA6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				84C5EA8B26A9EA4200D29B1D /* AppDelegate.h */,
+				84C5EA8C26A9EA4200D29B1D /* AppDelegate.m */,
+				84C5EA8E26A9EA4200D29B1D /* SceneDelegate.h */,
+				84C5EA8F26A9EA4200D29B1D /* SceneDelegate.m */,
+				84C5EA9426A9EA4200D29B1D /* Main.storyboard */,
+				84C5EA9926A9EA4300D29B1D /* LaunchScreen.storyboard */,
+			);
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 		84C5EA7F26A9EA4200D29B1D = {
@@ -98,15 +114,10 @@
 				8412A80226AB29A400C3D425 /* Extensions */,
 				84C5EAA426A9EA5800D29B1D /* Model */,
 				84C5EAA526A9EA6C00D29B1D /* Views */,
-				84C5EA8B26A9EA4200D29B1D /* AppDelegate.h */,
-				84C5EA8C26A9EA4200D29B1D /* AppDelegate.m */,
-				84C5EA8E26A9EA4200D29B1D /* SceneDelegate.h */,
-				84C5EA8F26A9EA4200D29B1D /* SceneDelegate.m */,
+				847D40A726AC80DB006CADA6 /* Support Files */,
 				84C5EA9126A9EA4200D29B1D /* ViewController.h */,
 				84C5EA9226A9EA4200D29B1D /* ViewController.m */,
-				84C5EA9426A9EA4200D29B1D /* Main.storyboard */,
 				84C5EA9726A9EA4300D29B1D /* Assets.xcassets */,
-				84C5EA9926A9EA4300D29B1D /* LaunchScreen.storyboard */,
 				84C5EA9C26A9EA4300D29B1D /* Info.plist */,
 				84C5EA9D26A9EA4300D29B1D /* main.m */,
 				847D40A326AC0280006CADA6 /* GlobalFunctions.h */,
@@ -127,8 +138,10 @@
 		84C5EAA526A9EA6C00D29B1D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				847D40A826AC8101006CADA6 /* Authorization window-Bridging-Header.h */,
 				8412A80026AB297A00C3D425 /* RSTextField.swift */,
-				8412A7FF26AB297900C3D425 /* Authorization window-Bridging-Header.h */,
+				847D40A626AC7E7B006CADA6 /* RSTextField.h */,
+				847D40A426AC7E65006CADA6 /* RSTextField.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,16 +217,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8412A80126AB297A00C3D425 /* RSTextField.swift in Sources */,
+				844874C226AD726A0001F873 /* UIColor+AdditionalColors.m in Sources */,
 				8412A80426AB29CE00C3D425 /* Helpers.swift in Sources */,
-				847D40A026ABF68A006CADA6 /* UIFont+UIFontForTitle.m in Sources */,
+				847D40A526AC7E65006CADA6 /* RSTextField.m in Sources */,
+				847D40A026ABF68A006CADA6 /* UIFont+ForTitle.m in Sources */,
 				84C5EA9326A9EA4200D29B1D /* ViewController.m in Sources */,
 				8412A7FE26AB24DE00C3D425 /* RightPassword.m in Sources */,
 				84C5EA8D26A9EA4200D29B1D /* AppDelegate.m in Sources */,
 				84C5EA9E26A9EA4300D29B1D /* main.m in Sources */,
 				84C5EA9026A9EA4200D29B1D /* SceneDelegate.m in Sources */,
-				847D409D26ABF075006CADA6 /* UIControl+UIControllOnOffAlpha.m in Sources */,
+				847D409D26ABF075006CADA6 /* UIControl+OnOffAlpha.m in Sources */,
 				847D40A226AC01F2006CADA6 /* GlobalFunctions.m in Sources */,
-				8412A80626AB2A5300C3D425 /* UIColorAppColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

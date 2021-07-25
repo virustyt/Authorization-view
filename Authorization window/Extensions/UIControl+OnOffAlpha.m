@@ -5,9 +5,9 @@
 //  Created by Vladimir Oleinikov on 24.07.2021.
 //
 
-#import "UIControl+UIControllOnOffAlpha.h"
+#import "UIControl+OnOffAlpha.h"
 
-@implementation UIControl (UIControllOnOffAlpha)
+@implementation UIControl (OnOffAlpha)
 -(void) off {
     self.enabled = false;
     self.alpha = 0.3;

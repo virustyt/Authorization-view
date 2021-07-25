@@ -5,9 +5,9 @@
 //  Created by Vladimir Oleinikov on 24.07.2021.
 //
 
-#import "UIFont+UIFontForTitle.h"
+#import "UIFont+ForTitle.h"
 
-@implementation UIFont (UIFontForTitle)
+@implementation UIFont (ForTitle)
 + (UIFont *) title {
     return [UIFont systemFontOfSize:40 weight:bold];
 }
