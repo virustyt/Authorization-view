@@ -41,7 +41,7 @@ static const CGFloat cornerRadius = 5.0;
     }
     
     
-    return nil;
+    return self;
 }
 
 @end

@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8412A7FE26AB24DE00C3D425 /* RightPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412A7FC26AB24DE00C3D425 /* RightPassword.m */; };
-		8412A80126AB297A00C3D425 /* RSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412A80026AB297A00C3D425 /* RSTextField.swift */; };
 		8412A80426AB29CE00C3D425 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412A80326AB29CE00C3D425 /* Helpers.swift */; };
 		844874C226AD726A0001F873 /* UIColor+AdditionalColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 844874C126AD726A0001F873 /* UIColor+AdditionalColors.m */; };
+		844874C426AD77B00001F873 /* RSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844874C326AD77B00001F873 /* RSButton.swift */; };
+		844874C626AD77DD0001F873 /* RSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 844874C526AD77DD0001F873 /* RSButton.m */; };
 		847D409D26ABF075006CADA6 /* UIControl+OnOffAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D409C26ABF075006CADA6 /* UIControl+OnOffAlpha.m */; };
 		847D40A026ABF68A006CADA6 /* UIFont+ForTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D409F26ABF68A006CADA6 /* UIFont+ForTitle.m */; };
 		847D40A226AC01F2006CADA6 /* GlobalFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D40A126AC01F2006CADA6 /* GlobalFunctions.m */; };
@@ -27,10 +28,12 @@
 /* Begin PBXFileReference section */
 		8412A7FC26AB24DE00C3D425 /* RightPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightPassword.m; sourceTree = "<group>"; };
 		8412A7FD26AB24DE00C3D425 /* RightPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RightPassword.h; path = ../../../../../Desktop/Model/RightPassword.h; sourceTree = "<group>"; };
-		8412A80026AB297A00C3D425 /* RSTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSTextField.swift; sourceTree = "<group>"; };
 		8412A80326AB29CE00C3D425 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		844874C026AD726A0001F873 /* UIColor+AdditionalColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+AdditionalColors.h"; sourceTree = "<group>"; };
 		844874C126AD726A0001F873 /* UIColor+AdditionalColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AdditionalColors.m"; sourceTree = "<group>"; };
+		844874C326AD77B00001F873 /* RSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSButton.swift; sourceTree = "<group>"; };
+		844874C526AD77DD0001F873 /* RSButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSButton.m; sourceTree = "<group>"; };
+		844874C726AD77F20001F873 /* RSButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSButton.h; sourceTree = "<group>"; };
 		847D409B26ABF075006CADA6 /* UIControl+OnOffAlpha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+OnOffAlpha.h"; sourceTree = "<group>"; };
 		847D409C26ABF075006CADA6 /* UIControl+OnOffAlpha.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+OnOffAlpha.m"; sourceTree = "<group>"; };
 		847D409E26ABF68A006CADA6 /* UIFont+ForTitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+ForTitle.h"; sourceTree = "<group>"; };
@@ -139,9 +142,11 @@
 			isa = PBXGroup;
 			children = (
 				847D40A826AC8101006CADA6 /* Authorization window-Bridging-Header.h */,
-				8412A80026AB297A00C3D425 /* RSTextField.swift */,
+				844874C326AD77B00001F873 /* RSButton.swift */,
 				847D40A626AC7E7B006CADA6 /* RSTextField.h */,
 				847D40A426AC7E65006CADA6 /* RSTextField.m */,
+				844874C726AD77F20001F873 /* RSButton.h */,
+				844874C526AD77DD0001F873 /* RSButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,17 +221,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8412A80126AB297A00C3D425 /* RSTextField.swift in Sources */,
 				844874C226AD726A0001F873 /* UIColor+AdditionalColors.m in Sources */,
 				8412A80426AB29CE00C3D425 /* Helpers.swift in Sources */,
 				847D40A526AC7E65006CADA6 /* RSTextField.m in Sources */,
 				847D40A026ABF68A006CADA6 /* UIFont+ForTitle.m in Sources */,
 				84C5EA9326A9EA4200D29B1D /* ViewController.m in Sources */,
 				8412A7FE26AB24DE00C3D425 /* RightPassword.m in Sources */,
+				844874C426AD77B00001F873 /* RSButton.swift in Sources */,
 				84C5EA8D26A9EA4200D29B1D /* AppDelegate.m in Sources */,
 				84C5EA9E26A9EA4300D29B1D /* main.m in Sources */,
 				84C5EA9026A9EA4200D29B1D /* SceneDelegate.m in Sources */,
 				847D409D26ABF075006CADA6 /* UIControl+OnOffAlpha.m in Sources */,
+				844874C626AD77DD0001F873 /* RSButton.m in Sources */,
 				847D40A226AC01F2006CADA6 /* GlobalFunctions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
