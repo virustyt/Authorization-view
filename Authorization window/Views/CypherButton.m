@@ -32,7 +32,7 @@ static const CGFloat backgroundOpacity = 0.2;
     @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:@"init(coder:) has not been implemented" userInfo:nil];
 }
 
--(id)init:(CypherButtonCases) buttonCase {
+-(id)initFor:(CypherButtonCases) buttonCase {
     self = [super initWithFrame:CGRectZero];
     
     if(self) {

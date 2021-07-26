@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger, CypherButtonCases) {
 
 @interface CypherButton : UIButton
 @property (assign,nonatomic,readonly) CypherButtonCases cypherCase;
+-(id)initFor:(CypherButtonCases) buttonCase ;
 @end
 
 #endif /* CypherButton_h */
