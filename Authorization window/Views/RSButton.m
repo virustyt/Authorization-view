@@ -27,6 +27,14 @@ static const CGFloat imageLeftInset = -5;
 
 @implementation RSButton
 
+-(void)setHighlighted:(BOOL)highlighted {
+    if (self.isHighlighted) {
+        self.layer.backgroundColor = [UIColor.littleBoyBlue colorWithAlphaComponent:backgroundOpacity].CGColor;
+    } else {
+        self.layer.backgroundColor = UIColor.clearColor.CGColor;
+    }
+}
+
 -(id)initWithCoder:(NSCoder *)coder {
     @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:@"init(coder:) has not been implemented" userInfo:nil];
 }
@@ -57,11 +65,6 @@ static const CGFloat imageLeftInset = -5;
     return self;
 }
 
--(void)setHighlighted:(BOOL)highlighted {
-    if (self.isHighlighted) {
-        self.layer.backgroundColor = [UIColor.littleBoyBlue colorWithAlphaComponent:backgroundOpacity].CGColor;
-    } else {
-        self.layer.backgroundColor = UIColor.clearColor.CGColor;
-    }
-}
+
+
 @end
