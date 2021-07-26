@@ -5,7 +5,7 @@
 //  Created by Vladimir Oleinikov on 25.07.2021.
 //
 
-#import "CypherStackView.h"
+#import "CypherView.h"
 #import "UIColor+AdditionalColors.h"
 
 static NSString * const underscore = @"_";
