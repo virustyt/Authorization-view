@@ -37,6 +37,7 @@ static const CGFloat labelFontSize = 18.0;
         lable.text = underscore;
         lable.font = [UIFont systemFontOfSize:labelFontSize weight:UIFontWeightSemibold];
         lable.translatesAutoresizingMaskIntoConstraints = false;
+        lable.hidden = true;
         
         self.cypherLabel = lable;
         return lable;
@@ -52,6 +53,7 @@ static const CGFloat labelFontSize = 18.0;
         [stack setAxis:UILayoutConstraintAxisHorizontal];
         stack.spacing = stackSpacing;
         stack.translatesAutoresizingMaskIntoConstraints = false;
+        stack.hidden = true;
         
         self.stackView = stack;
         return stack;
@@ -79,6 +81,7 @@ static const CGFloat labelFontSize = 18.0;
 -(CypherButton*) buildButton:(CypherButtonCases) buttonCase {
     CypherButton *button = [[CypherButton alloc] initFor:buttonCase];
     [button addTarget:self action:@selector(cypherButtonHandler:) forControlEvents:UIControlEventTouchUpInside];
+    button.hidden = true;
     return button;
 }
 
@@ -111,10 +114,10 @@ static const CGFloat labelFontSize = 18.0;
 }
 
 -(void) cypherButtonHandler: (CypherButton*) button {
+    [self.selectedCases addObject:@((NSInteger)button.cypherCase)];
+    [self updadeLabel];
     if (self.selectedCases.count < 3) {
         self.layer.borderColor = UIColor.clearColor.CGColor;
-        [self.selectedCases addObject:@(button.cypherCase)];
-        [self updadeLabel];
     } else if (self.validationHandler) {
         self.validationHandler(self.selectedCases);
     }
@@ -122,17 +125,19 @@ static const CGFloat labelFontSize = 18.0;
 
 -(void) updadeLabel {
     NSMutableString *stringOfcases = [[NSMutableString alloc] init];
+    NSLog(@"%@",self.selectedCases);
     for (id object in self.selectedCases) {
-        NSMutableString *stringCase = [NSMutableString stringWithFormat:@"%ld", (long)((NSInteger) object) ];
+        NSMutableString *stringCase = [NSMutableString stringWithFormat:@"%@", (long) object ];
         [stringCase appendString:@" "];
         [stringOfcases appendString:stringCase];
     }
-    [self.cypherLabel setText:stringOfcases];
+    self.cypherLabel.text = stringOfcases;
 }
 
 -(instancetype) initWithFrame:(CGRect)frame{
     self = [super initWithFrame:CGRectZero];
     if (self) {
+        self.selectedCases = [[NSMutableArray alloc] init];
         [self setUpAppearence];
     }
     return self;

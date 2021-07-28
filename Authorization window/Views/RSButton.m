@@ -35,11 +35,11 @@ static const CGFloat imageLeftInset = -5;
     }
 }
 
--(id)initWithCoder:(NSCoder *)coder {
+-(instancetype)initWithCoder:(NSCoder *)coder {
     @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:@"init(coder:) has not been implemented" userInfo:nil];
 }
 
--(id)initWithFrame:(CGRect)frame {
+-(instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:CGRectZero];
     if (self) {
         self.isActive = false;
@@ -51,19 +51,21 @@ static const CGFloat imageLeftInset = -5;
         
         self.layer.borderWidth = borderWidth;
         self.layer.borderColor = UIColor.littleBoyBlue.CGColor;
-        self.layer.borderWidth = borderWidth;
+        self.layer.cornerRadius = cornerRadius;
         
         [self setTitleColor:[UIColor.littleBoyBlue colorWithAlphaComponent:titleOpacity] forState:UIControlStateHighlighted];
         
         if (@available(iOS 13.0, *)) {
             [self setImage:[UIImage systemImageNamed:@"person"] forState:UIControlStateNormal];
         } else {
-            // Fallback on earlier versions
+            //Fallback on earlier versions
+            [self setImage:[UIImage imageNamed:@"person"] forState:UIControlStateNormal];
         }
         if (@available(iOS 13.0, *)) {
             [self setImage:[UIImage systemImageNamed:@"person.fill"] forState:UIControlStateHighlighted];
         } else {
             // Fallback on earlier versions
+            [self setImage:[UIImage imageNamed:@"person"] forState:UIControlStateHighlighted];
         }
         
         [self setImageEdgeInsets:UIEdgeInsetsMake(self.imageEdgeInsets.top, imageLeftInset, self.imageEdgeInsets.bottom, self.imageEdgeInsets.right)];
@@ -72,7 +74,5 @@ static const CGFloat imageLeftInset = -5;
     }
     return self;
 }
-
-
 
 @end

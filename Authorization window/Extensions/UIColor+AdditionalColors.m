@@ -26,11 +26,11 @@
 };
 
 +(UIColor *) black {
-    return [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+    return [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0];
 };
 
 +(UIColor *) littleBoyBlue {
-    return [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+    return [UIColor colorWithRed:128/255.0 green:164.0/255 blue:237.0/255 alpha:1.0];
 };
 
 @end

@@ -24,12 +24,13 @@ static const CGFloat cornerRadius = 5.0;
             break;
         case Waiting:
             self.layer.borderColor = UIColor.blackCoral.CGColor;
+            self.text = nil;
             break;
     }
     self.selectedState = state;
 }
 
--(id)initWithFrame:(CGRect)frame{
+-(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:CGRectZero];
     if (self) {
         self.backgroundColor = UIColor.whiteColor;

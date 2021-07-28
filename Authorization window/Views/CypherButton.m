@@ -28,11 +28,11 @@ static const CGFloat backgroundOpacity = 0.2;
     }
 }
 
--(id)initWithCoder:(NSCoder *)coder {
+-(instancetype)initWithCoder:(NSCoder *)coder {
     @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:@"init(coder:) has not been implemented" userInfo:nil];
 }
 
--(id)initFor:(CypherButtonCases) buttonCase {
+-(instancetype)initFor:(CypherButtonCases) buttonCase {
     self = [super initWithFrame:CGRectZero];
     
     if(self) {

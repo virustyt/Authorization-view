@@ -14,7 +14,7 @@
 #import "UIFont+ForTitle.h"
 #import "UIControl+OnOffAlpha.h"
 
-static NSString * const gPageTitle = @"RSSchool";
+static NSString * const gPageTitle = @"Authorization";
 static NSString * const gLoginFieldPlaceholder = @"Login";
 static NSString * const gPasswordFieldPlaceholder = @"Password";
 static NSString * const gAuthorizationButtonTitle = @"Authorize";
@@ -51,11 +51,11 @@ static const CGFloat verticalMidSpacing = 60.0;
     [self.loginField updateState:Failure];
     [self.passwordField updateState:Failure];
     
-    if (self.loginField.text == gCorrectLogin) {
+    if ([self.loginField.text  isEqual:gCorrectLogin] ) {
         isLoginCorrect = true;
         [self.loginField updateState:Sucsess];
     }
-    if (self.passwordField.text == gCorrectPassword) {
+    if ([self.passwordField.text isEqual:gCorrectPassword]) {
         isPasswordCorrect = true;
         [self.passwordField updateState:Sucsess];
     }
@@ -68,7 +68,16 @@ static const CGFloat verticalMidSpacing = 60.0;
             [self.loginField off];
             [self.passwordField off];
             [self.authorizationButton off];
-            self.cypherView.hidden = true;
+            self.cypherView.hidden = false;
+            for (id view in self.cypherView.subviews){
+                ((UIView*) view).hidden = false;
+                if ([view isKindOfClass:UIStackView.class]) {
+                    for (id button in ((UIStackView*) view).subviews) {
+                        ((UIView*) button).hidden = false;
+                    }
+                }
+            }
+            
         }];
     }
 }
@@ -96,6 +105,7 @@ static const CGFloat verticalMidSpacing = 60.0;
     [self presentViewController:alertController animated:true completion:^{}];
 }
 
+//MARK: -UI implementation
 -(void) SetUpAppearence{
     [self.view addSubview:self.pageTitleLabel];
     [self.view addSubview:self.loginField];
@@ -109,7 +119,7 @@ static const CGFloat verticalMidSpacing = 60.0;
     
         [self.loginField.topAnchor constraintEqualToAnchor:self.pageTitleLabel.bottomAnchor constant: verticalBigSpacing],
         [self.loginField.leadingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.leadingAnchor constant:padding],
-        [self.loginField.trailingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.trailingAnchor constant:verticalBigSpacing],
+        [self.loginField.trailingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.trailingAnchor constant:-padding],
     
         [self.passwordField.topAnchor constraintEqualToAnchor:self.loginField.bottomAnchor constant:verticalSmallSpacing],
         [self.passwordField.centerXAnchor constraintEqualToAnchor:self.loginField.centerXAnchor],
@@ -124,7 +134,6 @@ static const CGFloat verticalMidSpacing = 60.0;
     ];
 }
 
-//MARK: -UI implementation
 -(UILabel*) pageTitleLabel{
     if (_pageTitleLabel) {
         return _pageTitleLabel;
@@ -151,6 +160,7 @@ static const CGFloat verticalMidSpacing = 60.0;
         loginTextField.placeholder = gLoginFieldPlaceholder;
         
         loginTextField.translatesAutoresizingMaskIntoConstraints = false;
+        loginTextField.delegate = self;
         
         self.loginField = loginTextField;
         return loginTextField;
@@ -189,7 +199,6 @@ static const CGFloat verticalMidSpacing = 60.0;
         self.authorizationButton = button;
         return button;
     }
-
 }
 
 -(CypherView*) cypherView {
@@ -208,12 +217,11 @@ static const CGFloat verticalMidSpacing = 60.0;
             }
         };
         cypherView.translatesAutoresizingMaskIntoConstraints = false;
-        self.view.hidden = true;
+        _cypherView.hidden = true;
         
         self.cypherView = cypherView;
         return cypherView;
     }
-
 }
 
 - (void)viewDidLoad {
@@ -221,7 +229,7 @@ static const CGFloat verticalMidSpacing = 60.0;
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.whiteColor;
     [self SetUpAppearence];
-    [UIFont fontNamesForFamilyName:@"SF Mono"];
+    //[UIFont fontNamesForFamilyName:@"SF Mono"];
 }
 
 

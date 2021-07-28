@@ -25,8 +25,8 @@
             self.window = window;
             window.rootViewController = [[AuthorizationViewController alloc] init];
             
-            window.backgroundColor = UIColor.blueColor;
-            window.rootViewController.view.backgroundColor = UIColor.darkGrayColor;
+            //window.backgroundColor = UIColor.blueColor;
+            //window.rootViewController.view.backgroundColor = UIColor.darkGrayColor;
             
             [self.window makeKeyAndVisible];
         }
