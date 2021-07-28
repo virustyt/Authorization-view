@@ -8,6 +8,6 @@ An iOS application that represent a user authorization.
  - UI elements: `UIView`, `CALayer`, `UIViewController`, `UITextField`, `UIButton`, `UILabel`, `UIAlertController`.
  
  ## Workflow demonstration
-  <img alt="workflow element" src="ForReadmeFiles/app workflow.gif" width="380" />
+  <img alt="workflow element" src="ForReadmeFiles/new workflow.gif" width="380" />
 
 
