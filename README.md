@@ -9,5 +9,5 @@ An iOS application that represent a user authorization.
  
  ## Workflow demonstration
 
-  <img alt="demo element" src="Task/Demo_pres.gif" width="380" />
+  <img alt="workflow element" src="ForReadmeFiles/app workflow.gif" width="380" />
 
