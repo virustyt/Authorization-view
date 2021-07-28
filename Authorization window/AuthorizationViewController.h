@@ -5,9 +5,10 @@
 //  Created by Vladimir Oleinikov on 22.07.2021.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+@import Foundation;
 
-@interface ViewController : UIViewController
+@interface AuthorizationViewController : UIViewController
 
 
 @end

@@ -16,7 +16,7 @@ static const CGFloat cornerRadius = 5.0;
 
 -(void) updateState:(State) state {
     switch (state) {
-        case Success:
+        case Sucsess:
             self.layer.borderColor = UIColor.turquoiseGreen.CGColor;
             break;
         case Failure:

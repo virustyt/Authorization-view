@@ -19,32 +19,43 @@ static const CGFloat cornerRadius = 8.0;
 static const CGFloat labelFontSize = 18.0;
 
 
-@interface CypherStackView ()
+@interface CypherView ()
 @property (nonatomic,strong) NSMutableArray* selectedCases;
-@property (nonatomic) UILabel *cypherLablel;
+@property (nonatomic) UILabel *cypherLabel;
 @property (nonatomic) UIStackView *stackView;
 
 @end
 
 
-@implementation CypherStackView
+@implementation CypherView
 
--(UILabel*) cypherLablel {
-    UILabel *lable = [[UILabel alloc] init];
-    lable.text = underscore;
-    lable.font = [UIFont systemFontOfSize:labelFontSize weight:UIFontWeightSemibold];
-    lable.translatesAutoresizingMaskIntoConstraints = false;
-    
-    return nil;
+-(UILabel*) cypherLabel {
+    if (_cypherLabel) {
+        return _cypherLabel;
+    } else {
+        UILabel *lable = [[UILabel alloc] init];
+        lable.text = underscore;
+        lable.font = [UIFont systemFontOfSize:labelFontSize weight:UIFontWeightSemibold];
+        lable.translatesAutoresizingMaskIntoConstraints = false;
+        
+        self.cypherLabel = lable;
+        return lable;
+    }
 }
 
 -(UIStackView*) stackView {
-    UIStackView *stack = [[UIStackView alloc] init];
-    
-    [stack setAxis:UILayoutConstraintAxisHorizontal];
-    stack.spacing = stackSpacing;
-    stack.translatesAutoresizingMaskIntoConstraints = false;
-    return stack;
+    if (_stackView) {
+        return _stackView;
+    } else {
+        UIStackView *stack = [[UIStackView alloc] init];
+        
+        [stack setAxis:UILayoutConstraintAxisHorizontal];
+        stack.spacing = stackSpacing;
+        stack.translatesAutoresizingMaskIntoConstraints = false;
+        
+        self.stackView = stack;
+        return stack;
+    }
 }
 
 -(void) updateState: (State) state {
@@ -52,15 +63,15 @@ static const CGFloat labelFontSize = 18.0;
     case Failure:
             self.layer.borderColor = UIColor.redColor.CGColor;
             [self.selectedCases removeAllObjects];
-            self.cypherLablel.text = underscore;
-            break;;
+            self.cypherLabel.text = underscore;
+            break;
         case Sucsess:
             self.layer.borderColor = UIColor.turquoiseGreen.CGColor;
             break;;
         case Waiting:
             self.layer.borderColor = UIColor.clearColor.CGColor;
             [self.selectedCases removeAllObjects];
-            self.cypherLablel.text = underscore;
+            self.cypherLabel.text = underscore;
             break;;
     }
 }
@@ -72,7 +83,7 @@ static const CGFloat labelFontSize = 18.0;
 }
 
 -(void) setUpAppearence {
-    [self addSubview:self.cypherLablel];
+    [self addSubview:self.cypherLabel];
     [self addSubview:self.stackView];
     
     [self.stackView addArrangedSubview:[self buildButton:One]];
@@ -81,13 +92,13 @@ static const CGFloat labelFontSize = 18.0;
     
     
     [NSLayoutConstraint activateConstraints:@[
-        [self.cypherLablel.topAnchor constraintEqualToAnchor:self.topAnchor constant:15.0],
-        [self.cypherLablel.centerXAnchor constraintEqualToAnchor:self.centerXAnchor],
+        [self.cypherLabel.topAnchor constraintEqualToAnchor:self.topAnchor constant:15.0],
+        [self.cypherLabel.centerXAnchor constraintEqualToAnchor:self.centerXAnchor],
         
         [self.stackView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor constant:23.0],
-        [self.stackView.topAnchor constraintEqualToAnchor:self.cypherLablel.bottomAnchor constant:10.0],
+        [self.stackView.topAnchor constraintEqualToAnchor:self.cypherLabel.bottomAnchor constant:10.0],
         [self.stackView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor constant:-23.0],
-        [self.stackView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor constant:-15.0],
+        [self.stackView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor constant:-15.0]
         ]
     ];
     [self setBorder];
@@ -116,7 +127,7 @@ static const CGFloat labelFontSize = 18.0;
         [stringCase appendString:@" "];
         [stringOfcases appendString:stringCase];
     }
-    [self.cypherLablel setText:stringOfcases];
+    [self.cypherLabel setText:stringOfcases];
 }
 
 -(instancetype) initWithFrame:(CGRect)frame{

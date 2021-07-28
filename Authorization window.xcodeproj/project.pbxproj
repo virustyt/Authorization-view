@@ -8,32 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		8412A7FE26AB24DE00C3D425 /* RightPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412A7FC26AB24DE00C3D425 /* RightPassword.m */; };
-		8412A80426AB29CE00C3D425 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412A80326AB29CE00C3D425 /* Helpers.swift */; };
+		842FB26726AF29F0001FB079 /* AuthorizationViewController+UITextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FB26626AF29F0001FB079 /* AuthorizationViewController+UITextFieldDelegate.m */; };
 		844874C226AD726A0001F873 /* UIColor+AdditionalColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 844874C126AD726A0001F873 /* UIColor+AdditionalColors.m */; };
-		844874C426AD77B00001F873 /* RSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844874C326AD77B00001F873 /* RSButton.swift */; };
 		844874C626AD77DD0001F873 /* RSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 844874C526AD77DD0001F873 /* RSButton.m */; };
+		844874CD26AD9D3E0001F873 /* CypherButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 844874CC26AD9D3E0001F873 /* CypherButton.m */; };
+		844874D326ADB5F60001F873 /* CypherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844874D226ADB5F60001F873 /* CypherView.m */; };
 		847D409D26ABF075006CADA6 /* UIControl+OnOffAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D409C26ABF075006CADA6 /* UIControl+OnOffAlpha.m */; };
 		847D40A026ABF68A006CADA6 /* UIFont+ForTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D409F26ABF68A006CADA6 /* UIFont+ForTitle.m */; };
 		847D40A226AC01F2006CADA6 /* GlobalFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D40A126AC01F2006CADA6 /* GlobalFunctions.m */; };
 		847D40A526AC7E65006CADA6 /* RSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D40A426AC7E65006CADA6 /* RSTextField.m */; };
 		84C5EA8D26A9EA4200D29B1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA8C26A9EA4200D29B1D /* AppDelegate.m */; };
 		84C5EA9026A9EA4200D29B1D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA8F26A9EA4200D29B1D /* SceneDelegate.m */; };
-		84C5EA9326A9EA4200D29B1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA9226A9EA4200D29B1D /* ViewController.m */; };
-		84C5EA9626A9EA4200D29B1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C5EA9426A9EA4200D29B1D /* Main.storyboard */; };
+		84C5EA9326A9EA4200D29B1D /* AuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA9226A9EA4200D29B1D /* AuthorizationViewController.m */; };
 		84C5EA9826A9EA4300D29B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C5EA9726A9EA4300D29B1D /* Assets.xcassets */; };
 		84C5EA9B26A9EA4300D29B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C5EA9926A9EA4300D29B1D /* LaunchScreen.storyboard */; };
 		84C5EA9E26A9EA4300D29B1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA9D26A9EA4300D29B1D /* main.m */; };
+		84EAA90226B19F78004E6CD2 /* CypherButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 844874CC26AD9D3E0001F873 /* CypherButton.m */; };
+		84EAA90326B19F78004E6CD2 /* UIColor+AdditionalColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 844874C126AD726A0001F873 /* UIColor+AdditionalColors.m */; };
+		84EAA90426B19F78004E6CD2 /* RSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D40A426AC7E65006CADA6 /* RSTextField.m */; };
+		84EAA90526B19F78004E6CD2 /* UIFont+ForTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D409F26ABF68A006CADA6 /* UIFont+ForTitle.m */; };
+		84EAA90626B19F78004E6CD2 /* AuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA9226A9EA4200D29B1D /* AuthorizationViewController.m */; };
+		84EAA90726B19F78004E6CD2 /* RightPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412A7FC26AB24DE00C3D425 /* RightPassword.m */; };
+		84EAA90826B19F78004E6CD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA8C26A9EA4200D29B1D /* AppDelegate.m */; };
+		84EAA90926B19F78004E6CD2 /* AuthorizationViewController+UITextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FB26626AF29F0001FB079 /* AuthorizationViewController+UITextFieldDelegate.m */; };
+		84EAA90A26B19F78004E6CD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA9D26A9EA4300D29B1D /* main.m */; };
+		84EAA90B26B19F78004E6CD2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5EA8F26A9EA4200D29B1D /* SceneDelegate.m */; };
+		84EAA90C26B19F78004E6CD2 /* UIControl+OnOffAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D409C26ABF075006CADA6 /* UIControl+OnOffAlpha.m */; };
+		84EAA90D26B19F78004E6CD2 /* CypherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844874D226ADB5F60001F873 /* CypherView.m */; };
+		84EAA90E26B19F78004E6CD2 /* RSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 844874C526AD77DD0001F873 /* RSButton.m */; };
+		84EAA90F26B19F78004E6CD2 /* GlobalFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D40A126AC01F2006CADA6 /* GlobalFunctions.m */; };
+		84EAA91226B19F78004E6CD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C5EA9926A9EA4300D29B1D /* LaunchScreen.storyboard */; };
+		84EAA91326B19F78004E6CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C5EA9726A9EA4300D29B1D /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8412A7FC26AB24DE00C3D425 /* RightPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightPassword.m; sourceTree = "<group>"; };
 		8412A7FD26AB24DE00C3D425 /* RightPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RightPassword.h; path = ../../../../../Desktop/Model/RightPassword.h; sourceTree = "<group>"; };
-		8412A80326AB29CE00C3D425 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		842FB26526AF29F0001FB079 /* AuthorizationViewController+UITextFieldDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AuthorizationViewController+UITextFieldDelegate.h"; sourceTree = "<group>"; };
+		842FB26626AF29F0001FB079 /* AuthorizationViewController+UITextFieldDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AuthorizationViewController+UITextFieldDelegate.m"; sourceTree = "<group>"; };
 		844874C026AD726A0001F873 /* UIColor+AdditionalColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+AdditionalColors.h"; sourceTree = "<group>"; };
 		844874C126AD726A0001F873 /* UIColor+AdditionalColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AdditionalColors.m"; sourceTree = "<group>"; };
-		844874C326AD77B00001F873 /* RSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSButton.swift; sourceTree = "<group>"; };
 		844874C526AD77DD0001F873 /* RSButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSButton.m; sourceTree = "<group>"; };
 		844874C726AD77F20001F873 /* RSButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSButton.h; sourceTree = "<group>"; };
+		844874CB26AD9D260001F873 /* CypherButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CypherButton.h; sourceTree = "<group>"; };
+		844874CC26AD9D3E0001F873 /* CypherButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CypherButton.m; sourceTree = "<group>"; };
+		844874D226ADB5F60001F873 /* CypherView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CypherView.m; sourceTree = "<group>"; };
+		844874D426ADB60A0001F873 /* CypherView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CypherView.h; sourceTree = "<group>"; };
 		847D409B26ABF075006CADA6 /* UIControl+OnOffAlpha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+OnOffAlpha.h"; sourceTree = "<group>"; };
 		847D409C26ABF075006CADA6 /* UIControl+OnOffAlpha.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+OnOffAlpha.m"; sourceTree = "<group>"; };
 		847D409E26ABF68A006CADA6 /* UIFont+ForTitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+ForTitle.h"; sourceTree = "<group>"; };
@@ -43,22 +63,30 @@
 		847D40A426AC7E65006CADA6 /* RSTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSTextField.m; sourceTree = "<group>"; };
 		847D40A626AC7E7B006CADA6 /* RSTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSTextField.h; sourceTree = "<group>"; };
 		847D40A826AC8101006CADA6 /* Authorization window-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Authorization window-Bridging-Header.h"; sourceTree = "<group>"; };
-		84C5EA8826A9EA4200D29B1D /* Authorization window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Authorization window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C5EA8826A9EA4200D29B1D /* Authorization window ios 12.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Authorization window ios 12.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C5EA8B26A9EA4200D29B1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84C5EA8C26A9EA4200D29B1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		84C5EA8E26A9EA4200D29B1D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		84C5EA8F26A9EA4200D29B1D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		84C5EA9126A9EA4200D29B1D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84C5EA9226A9EA4200D29B1D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		84C5EA9526A9EA4200D29B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84C5EA9126A9EA4200D29B1D /* AuthorizationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizationViewController.h; sourceTree = "<group>"; };
+		84C5EA9226A9EA4200D29B1D /* AuthorizationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthorizationViewController.m; sourceTree = "<group>"; };
 		84C5EA9726A9EA4300D29B1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84C5EA9A26A9EA4300D29B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84C5EA9C26A9EA4300D29B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C5EA9D26A9EA4300D29B1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84EAA91726B19F78004E6CD2 /* Authorization window ios 13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Authorization window ios 13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EAA91826B19F79004E6CD2 /* Authorization window copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Authorization window copy-Info.plist"; path = "/Users/admin/Documents/Developer/Authorization window/Authorization window copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		84C5EA8526A9EA4200D29B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EAA91026B19F78004E6CD2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,13 +99,14 @@
 		8412A80226AB29A400C3D425 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				8412A80326AB29CE00C3D425 /* Helpers.swift */,
 				847D409B26ABF075006CADA6 /* UIControl+OnOffAlpha.h */,
 				847D409C26ABF075006CADA6 /* UIControl+OnOffAlpha.m */,
 				847D409E26ABF68A006CADA6 /* UIFont+ForTitle.h */,
 				847D409F26ABF68A006CADA6 /* UIFont+ForTitle.m */,
 				844874C026AD726A0001F873 /* UIColor+AdditionalColors.h */,
 				844874C126AD726A0001F873 /* UIColor+AdditionalColors.m */,
+				842FB26526AF29F0001FB079 /* AuthorizationViewController+UITextFieldDelegate.h */,
+				842FB26626AF29F0001FB079 /* AuthorizationViewController+UITextFieldDelegate.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -89,7 +118,6 @@
 				84C5EA8C26A9EA4200D29B1D /* AppDelegate.m */,
 				84C5EA8E26A9EA4200D29B1D /* SceneDelegate.h */,
 				84C5EA8F26A9EA4200D29B1D /* SceneDelegate.m */,
-				84C5EA9426A9EA4200D29B1D /* Main.storyboard */,
 				84C5EA9926A9EA4300D29B1D /* LaunchScreen.storyboard */,
 			);
 			path = "Support Files";
@@ -100,13 +128,15 @@
 			children = (
 				84C5EA8A26A9EA4200D29B1D /* Authorization window */,
 				84C5EA8926A9EA4200D29B1D /* Products */,
+				84EAA91826B19F79004E6CD2 /* Authorization window copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		84C5EA8926A9EA4200D29B1D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84C5EA8826A9EA4200D29B1D /* Authorization window.app */,
+				84C5EA8826A9EA4200D29B1D /* Authorization window ios 12.1.app */,
+				84EAA91726B19F78004E6CD2 /* Authorization window ios 13.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,8 +148,8 @@
 				84C5EAA426A9EA5800D29B1D /* Model */,
 				84C5EAA526A9EA6C00D29B1D /* Views */,
 				847D40A726AC80DB006CADA6 /* Support Files */,
-				84C5EA9126A9EA4200D29B1D /* ViewController.h */,
-				84C5EA9226A9EA4200D29B1D /* ViewController.m */,
+				84C5EA9126A9EA4200D29B1D /* AuthorizationViewController.h */,
+				84C5EA9226A9EA4200D29B1D /* AuthorizationViewController.m */,
 				84C5EA9726A9EA4300D29B1D /* Assets.xcassets */,
 				84C5EA9C26A9EA4300D29B1D /* Info.plist */,
 				84C5EA9D26A9EA4300D29B1D /* main.m */,
@@ -142,11 +172,14 @@
 			isa = PBXGroup;
 			children = (
 				847D40A826AC8101006CADA6 /* Authorization window-Bridging-Header.h */,
-				844874C326AD77B00001F873 /* RSButton.swift */,
 				847D40A626AC7E7B006CADA6 /* RSTextField.h */,
 				847D40A426AC7E65006CADA6 /* RSTextField.m */,
 				844874C726AD77F20001F873 /* RSButton.h */,
 				844874C526AD77DD0001F873 /* RSButton.m */,
+				844874CB26AD9D260001F873 /* CypherButton.h */,
+				844874CC26AD9D3E0001F873 /* CypherButton.m */,
+				844874D426ADB60A0001F873 /* CypherView.h */,
+				844874D226ADB5F60001F873 /* CypherView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,9 +187,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84C5EA8726A9EA4200D29B1D /* Authorization window */ = {
+		84C5EA8726A9EA4200D29B1D /* Authorization window ios 12.1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84C5EAA126A9EA4300D29B1D /* Build configuration list for PBXNativeTarget "Authorization window" */;
+			buildConfigurationList = 84C5EAA126A9EA4300D29B1D /* Build configuration list for PBXNativeTarget "Authorization window ios 12.1" */;
 			buildPhases = (
 				84C5EA8426A9EA4200D29B1D /* Sources */,
 				84C5EA8526A9EA4200D29B1D /* Frameworks */,
@@ -166,9 +199,26 @@
 			);
 			dependencies = (
 			);
-			name = "Authorization window";
+			name = "Authorization window ios 12.1";
 			productName = "Authorization window";
-			productReference = 84C5EA8826A9EA4200D29B1D /* Authorization window.app */;
+			productReference = 84C5EA8826A9EA4200D29B1D /* Authorization window ios 12.1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84EAA90026B19F78004E6CD2 /* Authorization window ios 13 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84EAA91426B19F78004E6CD2 /* Build configuration list for PBXNativeTarget "Authorization window ios 13" */;
+			buildPhases = (
+				84EAA90126B19F78004E6CD2 /* Sources */,
+				84EAA91026B19F78004E6CD2 /* Frameworks */,
+				84EAA91126B19F78004E6CD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Authorization window ios 13";
+			productName = "Authorization window";
+			productReference = 84EAA91726B19F78004E6CD2 /* Authorization window ios 13.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -198,7 +248,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84C5EA8726A9EA4200D29B1D /* Authorization window */,
+				84C5EA8726A9EA4200D29B1D /* Authorization window ios 12.1 */,
+				84EAA90026B19F78004E6CD2 /* Authorization window ios 13 */,
 			);
 		};
 /* End PBXProject section */
@@ -210,7 +261,15 @@
 			files = (
 				84C5EA9B26A9EA4300D29B1D /* LaunchScreen.storyboard in Resources */,
 				84C5EA9826A9EA4300D29B1D /* Assets.xcassets in Resources */,
-				84C5EA9626A9EA4200D29B1D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EAA91126B19F78004E6CD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EAA91226B19F78004E6CD2 /* LaunchScreen.storyboard in Resources */,
+				84EAA91326B19F78004E6CD2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,33 +280,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844874CD26AD9D3E0001F873 /* CypherButton.m in Sources */,
 				844874C226AD726A0001F873 /* UIColor+AdditionalColors.m in Sources */,
-				8412A80426AB29CE00C3D425 /* Helpers.swift in Sources */,
 				847D40A526AC7E65006CADA6 /* RSTextField.m in Sources */,
 				847D40A026ABF68A006CADA6 /* UIFont+ForTitle.m in Sources */,
-				84C5EA9326A9EA4200D29B1D /* ViewController.m in Sources */,
+				84C5EA9326A9EA4200D29B1D /* AuthorizationViewController.m in Sources */,
 				8412A7FE26AB24DE00C3D425 /* RightPassword.m in Sources */,
-				844874C426AD77B00001F873 /* RSButton.swift in Sources */,
 				84C5EA8D26A9EA4200D29B1D /* AppDelegate.m in Sources */,
+				842FB26726AF29F0001FB079 /* AuthorizationViewController+UITextFieldDelegate.m in Sources */,
 				84C5EA9E26A9EA4300D29B1D /* main.m in Sources */,
 				84C5EA9026A9EA4200D29B1D /* SceneDelegate.m in Sources */,
 				847D409D26ABF075006CADA6 /* UIControl+OnOffAlpha.m in Sources */,
+				844874D326ADB5F60001F873 /* CypherView.m in Sources */,
 				844874C626AD77DD0001F873 /* RSButton.m in Sources */,
 				847D40A226AC01F2006CADA6 /* GlobalFunctions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84EAA90126B19F78004E6CD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84EAA90226B19F78004E6CD2 /* CypherButton.m in Sources */,
+				84EAA90326B19F78004E6CD2 /* UIColor+AdditionalColors.m in Sources */,
+				84EAA90426B19F78004E6CD2 /* RSTextField.m in Sources */,
+				84EAA90526B19F78004E6CD2 /* UIFont+ForTitle.m in Sources */,
+				84EAA90626B19F78004E6CD2 /* AuthorizationViewController.m in Sources */,
+				84EAA90726B19F78004E6CD2 /* RightPassword.m in Sources */,
+				84EAA90826B19F78004E6CD2 /* AppDelegate.m in Sources */,
+				84EAA90926B19F78004E6CD2 /* AuthorizationViewController+UITextFieldDelegate.m in Sources */,
+				84EAA90A26B19F78004E6CD2 /* main.m in Sources */,
+				84EAA90B26B19F78004E6CD2 /* SceneDelegate.m in Sources */,
+				84EAA90C26B19F78004E6CD2 /* UIControl+OnOffAlpha.m in Sources */,
+				84EAA90D26B19F78004E6CD2 /* CypherView.m in Sources */,
+				84EAA90E26B19F78004E6CD2 /* RSButton.m in Sources */,
+				84EAA90F26B19F78004E6CD2 /* GlobalFunctions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		84C5EA9426A9EA4200D29B1D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84C5EA9526A9EA4200D29B1D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		84C5EA9926A9EA4300D29B1D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -380,6 +453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K4FDR4N6T3;
 				INFOPLIST_FILE = "Authorization window/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,6 +476,52 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K4FDR4N6T3;
 				INFOPLIST_FILE = "Authorization window/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TrainingInCoding.Authorization-window";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Authorization window/Views/Authorization window-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84EAA91526B19F78004E6CD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4FDR4N6T3;
+				INFOPLIST_FILE = "Authorization window copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TrainingInCoding.Authorization-window";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Authorization window/Views/Authorization window-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84EAA91626B19F78004E6CD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4FDR4N6T3;
+				INFOPLIST_FILE = "Authorization window copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,11 +546,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84C5EAA126A9EA4300D29B1D /* Build configuration list for PBXNativeTarget "Authorization window" */ = {
+		84C5EAA126A9EA4300D29B1D /* Build configuration list for PBXNativeTarget "Authorization window ios 12.1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84C5EAA226A9EA4300D29B1D /* Debug */,
 				84C5EAA326A9EA4300D29B1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84EAA91426B19F78004E6CD2 /* Build configuration list for PBXNativeTarget "Authorization window ios 13" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EAA91526B19F78004E6CD2 /* Debug */,
+				84EAA91626B19F78004E6CD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

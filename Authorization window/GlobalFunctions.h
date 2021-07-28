@@ -7,5 +7,11 @@
 
 @import UIKit;
 
+typedef NS_ENUM(NSInteger, State) {
+    Failure,
+    Sucsess,
+    Waiting
+};
+
 CGRect CGRectMyOssomMake(CGFloat x, CGFloat y, CGFloat width, CGFloat height);
 

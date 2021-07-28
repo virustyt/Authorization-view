@@ -55,8 +55,16 @@ static const CGFloat imageLeftInset = -5;
         
         [self setTitleColor:[UIColor.littleBoyBlue colorWithAlphaComponent:titleOpacity] forState:UIControlStateHighlighted];
         
-        [self setImage:[UIImage systemImageNamed:@"person"] forState:UIControlStateNormal];
-        [self setImage:[UIImage systemImageNamed:@"person.fill"] forState:UIControlStateHighlighted];
+        if (@available(iOS 13.0, *)) {
+            [self setImage:[UIImage systemImageNamed:@"person"] forState:UIControlStateNormal];
+        } else {
+            // Fallback on earlier versions
+        }
+        if (@available(iOS 13.0, *)) {
+            [self setImage:[UIImage systemImageNamed:@"person.fill"] forState:UIControlStateHighlighted];
+        } else {
+            // Fallback on earlier versions
+        }
         
         [self setImageEdgeInsets:UIEdgeInsetsMake(self.imageEdgeInsets.top, imageLeftInset, self.imageEdgeInsets.bottom, self.imageEdgeInsets.right)];
         

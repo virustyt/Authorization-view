@@ -6,21 +6,18 @@
 //
 
 #import "CypherButton.h"
+#import "GlobalFunctions.h"
 @import Foundation;
 @import UIKit;
 
-typedef NS_ENUM(NSInteger, State) {
-    Failure,
-    Sucsess,
-    Waiting
-} ;
+
 
 #ifndef CypherView_h
 #define CypherView_h
 
-@interface CypherStackView : UIView
-@property (nonatomic,readwrite) void (^validationHandler) (NSMutableArray*) ;
--(void)updateState;
+@interface CypherView : UIView
+@property (nonatomic,readwrite) void (^validationHandler) (NSMutableArray*);
+-(void)updateState:(State) state;
 @end
  
 #endif /* CypherView_h */
