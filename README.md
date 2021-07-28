@@ -1,4 +1,4 @@
-# Authorization-view
+# Authorization view
 
 An iOS application that represent a user authorization.
 
