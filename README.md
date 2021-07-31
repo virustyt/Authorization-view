@@ -3,6 +3,7 @@
 An iOS application that represent a user authorization.
 
 ## What I Learned
+ - objective-c
  - layout from code
  - supporting differnt IOS operation systems
  - UI elements: `UIView`, `CALayer`, `UIViewController`, `UITextField`, `UIButton`, `UILabel`, `UIAlertController`.
